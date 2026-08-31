@@ -11,7 +11,7 @@ trigger_keywords: [知识库, wiki, 建索引, 整理知识, 知识管理, 目�
 
 > 零依赖。一个文件夹 + 四个索引文件 = AI 能检索的知识库。
 >
-> 升级路线：Wiki版 → RAG版(insigoo-agentic-rag) → SAG版(insigoo-sag)
+> 升级路线：Wiki版(本包) → RAG版(insigoo-knowledge-base) → SAG版(insigoo-sag)
 
 ---
 
@@ -45,7 +45,7 @@ corpus_index.md       — 语料索引: Agent从对话中提炼的问答路径 [
 └── 🏢 行政/
 ```
 
-> 如果你安装了 [insigoo-memory](https://github.com/ericyueric/insigoo-memory)，它会自动创建和维护这些目录。
+> 如果你使用 [insigoo-memory](https://github.com/ericyueric/insigoo-memory)（SAG 知识库架构师方法论），可参考其建库流程，在 Agent 协助下建立并维护这些目录。
 
 ---
 
@@ -125,11 +125,7 @@ Agent 从对话中自动提炼的"问答路径"。高频问答无需重复搜索
 
 ## 维护
 
-```bash
-insigoo-memory doctor -w /你的文件夹
-```
-
-自动检查：断链 / 空区 / 重复文件 / 过时文件 / 语料频次异常
+参考 [insigoo-memory](https://github.com/ericyueric/insigoo-memory) 的索引健康检查流程，定期核验：断链 / 空区 / 重复文件 / 过时文件 / 语料频次异常。
 
 ---
 
